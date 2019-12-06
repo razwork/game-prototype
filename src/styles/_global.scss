@@ -1,0 +1,16 @@
+@import "mixins";
+@import "variables";
+@import "style";
+
+* {
+  margin: 0;
+  padding: 0;
+  @include box-sizing(border-box);
+}
+
+html,
+body {
+  background: $body-bg;
+  font-family: sans-serif;
+  font-size: 18px;
+}

@@ -1,0 +1,26 @@
+// Colour variables
+$biege: #f2efed;
+$purple: #652949;
+$white: #fff;
+$black: #000;
+$grey: #6d7278;
+
+// Colour assignment
+$primary: $purple;
+$body-bg: $biege;
+
+// Font sizing
+$base-font-size: 12px;
+$heading-scale: 4; // amount of px headings grow from h6 to h1
+
+@for $i from 1 through 6 {
+  h#{$i} {
+    font-size: $base-font-size + $heading-scale * (6 - $i);
+    color: $primary;
+    margin-bottom: $base-font-size + $heading-scale * (6 - $i);
+  }
+}
+
+// Shadows
+$shadow-1: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+$shadow-2: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
